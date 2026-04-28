@@ -1,0 +1,12 @@
+# robots.txt for cashhousebuyers4you.com
+User-agent: *
+Allow: /
+
+# Block common attack paths
+Disallow: /admin
+Disallow: /wp-admin
+Disallow: /.env
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://cashhousebuyers4you.com/sitemap.xml
