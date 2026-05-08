@@ -21,6 +21,9 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"Cash House Buyers 4 You — Tulsa","telephone":"+19189486255","email":"info@cashhousebuyers4you.com","areaServed":["Tulsa","Broken Arrow","Jenks","Bixby","Owasso","Sand Springs","Sapulpa"],"priceRange":"$$"}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How fast can you close on a Tulsa house?","acceptedAnswer":{"@type":"Answer","text":"We can close in as few as 10 days on a cash offer. Foreclosure situation? We've done 5–7 day closings when Tulsa County auction dates are approaching. Call (918) 948-6255 immediately."}},{"@type":"Question","name":"My house has foundation issues from Oklahoma's red clay soil — will you still buy it?","acceptedAnswer":{"@type":"Answer","text":"Yes. Oklahoma's expansive red clay is notorious for causing foundation movement and pier-and-beam issues. This makes homes nearly impossible to sell on the traditional market — lenders won't finance them and retail buyers walk away. We buy Tulsa-area homes with foundation problems as-is, no repairs required."}},{"@type":"Question","name":"What is Oklahoma HB 3664 and how does it affect my sale?","acceptedAnswer":{"@type":"Answer","text":"Oklahoma House Bill 3664 requires wholesalers and certain investors to make specific disclosures when purchasing property. We operate in full compliance — you'll receive all required disclosures before signing anything. We are a direct buyer, not a wholesaler, but we want you to understand your rights in every transaction."}},{"@type":"Question","name":"What areas of Green Country do you buy in?","acceptedAnswer":{"@type":"Answer","text":"We buy throughout the Tulsa metro and Green Country: Tulsa, Broken Arrow, Jenks, Bixby, Owasso, Sand Springs, Sapulpa, Claremore, Catoosa, and surrounding communities."}},{"@type":"Question","name":"Do I need to make repairs or clean out the house?","acceptedAnswer":{"@type":"Answer","text":"No. We buy Tulsa-area homes as-is — foundation issues, storm damage, outdated interiors, deferred maintenance, or any condition. You don't repair, stage, or clean out anything."}}]}
+</script>
 <style>
   :root{--red:#E30613;--red-dark:#B8050F;--black:#0A0A0A;--white:#FFF;--gray-50:#FAFAFA;--gray-100:#F4F4F4;--gray-200:#E5E7EB;--gray-400:#9CA3AF;--gray-600:#4B5563;--gray-800:#1F2937;--green:#10B981;--shadow-md:0 4px 6px -1px rgba(0,0,0,.1);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.1);--shadow-xl:0 20px 25px -5px rgba(0,0,0,.1)}
   *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
@@ -88,6 +91,14 @@
   .footer-bottom{padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;text-align:center}
   @media (max-width:800px){.footer-grid{grid-template-columns:1fr 1fr}}
   @media (max-width:500px){.footer-grid{grid-template-columns:1fr}}
+  .faq-section{padding:70px 0;background:var(--gray-50)}
+  .faq-list{max-width:800px;margin:0 auto}
+  .faq-item{border-bottom:1px solid var(--gray-200)}
+  .faq-item summary{padding:20px 0;font-weight:700;font-size:16px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:'+';font-size:22px;font-weight:400;color:var(--gray-400);flex-shrink:0;margin-left:16px}
+  .faq-item[open] summary{color:var(--red)}.faq-item[open] summary::after{content:'−'}
+  .faq-item .answer{padding:0 0 20px;color:var(--gray-600);line-height:1.7}
 </style>
 <script src="analytics.js" defer></script>
 </head>
@@ -208,6 +219,40 @@
   </div>
 </section>
 
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>How fast can you close on my Tulsa home?</summary>
+        <div class="answer">We can close in as few as 7 days once you accept our offer. Need more time? We can work around your schedule — 30, 45, or 60 days is no problem.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>My house has foundation issues from Oklahoma's red clay soil. Will you still buy it?</summary>
+        <div class="answer">Absolutely. Oklahoma's expansive red clay soil causes foundation movement in a large percentage of homes across Tulsa and the surrounding Green Country area. We factor that into our offer and buy the property as-is — no repairs, no engineering reports required from you.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are you compliant with Oklahoma HB 3664's wholesaler-disclosure requirements?</summary>
+        <div class="answer">Yes. Oklahoma House Bill 3664 requires wholesalers to disclose their equitable interest in writing before marketing a property. When we purchase your home, we are the buyer — not a middleman assigning the contract — so the transaction is straightforward and fully compliant with Oklahoma law.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which Green Country communities do you serve?</summary>
+        <div class="answer">We buy homes throughout the Tulsa metro and surrounding Green Country region, including Broken Arrow, Jenks, Bixby, Owasso, Sand Springs, Sapulpa, Glenpool, Claremore, and Catoosa. If you're in the greater Tulsa area, contact us — we likely cover your community.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need to clean out or repair anything before closing?</summary>
+        <div class="answer">No. We buy Tulsa homes in any condition — storm damage, outdated kitchens, full of furniture, deferred maintenance. Leave whatever you can't take and walk away. We handle everything after closing.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <h2>Ready to sell your Tulsa house?</h2>
@@ -224,7 +269,7 @@
     <div class="footer-grid">
       <div class="footer-brand"><a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 100 100" style="width:40px;height:40px;"><circle cx="50" cy="50" r="48" fill="#FFF" stroke="#0A0A0A" stroke-width="2"/><path d="M28 56 L50 36 L72 56 L72 74 L58 74 L58 63 L42 63 L42 74 L28 74 Z" fill="#E30613"/></svg><div class="logo-text">Cash House<br/>Buyers <span>4 You</span></div></a><p>Fair options for homeowners across Atlanta, Tulsa, Tampa Bay, and Seattle. BBB A+ Accredited.</p></div>
       <div class="footer-col"><h4>For Sellers</h4><ul><li><a href="how-it-works.html">How It Works</a></li><li><a href="options-to-sell.html">Options to Sell</a></li><li><a href="index.html#offer">Get Your Offer</a></li><li><a href="seniors.html">For Seniors &amp; Families</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div class="footer-col"><h4>Where We Buy</h4><ul><li><a href="atlanta.html">Atlanta, GA</a></li><li><a href="tulsa.html">Tulsa, OK</a></li><li><a href="florida.html">Hernando &amp; Pasco, FL</a></li><li><a href="seattle.html">Seattle, WA</a></li></ul></div>
+      <div class="footer-col"><h4>Where We Buy</h4><ul><li><a href="atlanta.html">Atlanta, GA</a></li><li><a href="tulsa.html">Tulsa, OK</a></li><li><a href="hernando-county.html">Hernando County, FL</a></li><li><a href="pasco-county.html">Pasco County, FL</a></li></ul></div>
       <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li><li><a href="for-investors.html">For Investors</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
     </div>
     <div class="footer-bottom">© 2026 Cash House Buyers 4 You · All rights reserved</div>

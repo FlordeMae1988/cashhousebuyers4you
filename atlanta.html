@@ -32,6 +32,9 @@
   "aggregateRating": {"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"100"}
 }
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How fast can you close on an Atlanta house?","acceptedAnswer":{"@type":"Answer","text":"We can close in as few as 10 days on a cash offer. If your situation requires more time — coordinating a move, waiting on probate, or managing a tenant departure — we close on your timeline."}},{"@type":"Question","name":"Do I need to make repairs before selling?","acceptedAnswer":{"@type":"Answer","text":"No. We buy Atlanta-area homes as-is. No repairs, no cleaning, no staging. We handle everything after closing."}},{"@type":"Question","name":"What counties and cities do you buy in around Atlanta?","acceptedAnswer":{"@type":"Answer","text":"We buy throughout metro Atlanta including Fulton, DeKalb, Gwinnett, Cobb, Clayton, Henry, and Douglas counties — Atlanta, Marietta, Decatur, Roswell, Alpharetta, Lawrenceville, Conyers, and surrounding areas."}},{"@type":"Question","name":"Can you help if I'm facing foreclosure in Georgia?","acceptedAnswer":{"@type":"Answer","text":"Yes. Georgia foreclosures move fast — Fulton and DeKalb auctions can happen with little notice. We've closed in 5–10 days on foreclosure rescues. Call (470) 486-6600 as early as possible."}},{"@type":"Question","name":"What is a subject-to deal and how does it work in Georgia?","acceptedAnswer":{"@type":"Answer","text":"In a subject-to transaction, we take over your existing mortgage payments without paying it off at closing. Your loan stays in your name, but we make the payments. It's a great option for sellers who have a low-rate mortgage they don't want to lose equity paying off, or who owe more than the home is worth."}}]}
+</script>
 <style>
   :root{--red:#E30613;--red-dark:#B8050F;--black:#0A0A0A;--white:#FFF;--gray-50:#FAFAFA;--gray-100:#F4F4F4;--gray-200:#E5E7EB;--gray-400:#9CA3AF;--gray-600:#4B5563;--gray-800:#1F2937;--green:#10B981;--yellow:#FBBF24;--shadow-md:0 4px 6px -1px rgba(0,0,0,.1);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.1);--shadow-xl:0 20px 25px -5px rgba(0,0,0,.1)}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -148,6 +151,14 @@
   .footer-bottom{padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;text-align:center}
   @media (max-width:800px){.footer-grid{grid-template-columns:1fr 1fr}}
   @media (max-width:500px){.footer-grid{grid-template-columns:1fr}}
+  .faq-section{padding:70px 0;background:var(--gray-50)}
+  .faq-list{max-width:800px;margin:0 auto}
+  .faq-item{border-bottom:1px solid var(--gray-200)}
+  .faq-item summary{padding:20px 0;font-weight:700;font-size:16px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary::after{content:'+';font-size:22px;font-weight:400;color:var(--gray-400);flex-shrink:0;margin-left:16px}
+  .faq-item[open] summary{color:var(--red)}.faq-item[open] summary::after{content:'−'}
+  .faq-item .answer{padding:0 0 20px;color:var(--gray-600);line-height:1.7}
 
 </style>
 <script src="analytics.js" defer></script>
@@ -307,6 +318,40 @@
   </div>
 </section>
 
+<section class="faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>How fast can you close on my Atlanta home?</summary>
+        <div class="answer">We can close in as few as 7 days once you accept our offer. If you need more time — say 30 or 60 days — that works too. We work around your schedule, not ours.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need to make repairs before selling?</summary>
+        <div class="answer">Not at all. We buy Atlanta homes in any condition — fire damage, foundation issues, outdated systems, full of belongings. You won't spend a dollar on repairs or cleanout.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which Atlanta-area counties do you serve?</summary>
+        <div class="answer">We buy houses throughout the metro, including Fulton, DeKalb, Gwinnett, Cobb, Clayton, Henry, Fayette, Douglas, Cherokee, and Forsyth counties. If your property is within the Atlanta MSA, reach out — we likely cover it.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can you help if I'm facing foreclosure?</summary>
+        <div class="answer">Yes. A cash sale can stop a foreclosure before it hits your credit record. We've helped homeowners in pre-foreclosure, behind on payments, and even in active foreclosure proceedings close quickly and walk away with cash. Time matters — contact us as soon as possible.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What's the difference between a cash offer and a creative-finance offer?</summary>
+        <div class="answer">A cash offer means we wire funds to the closing table — straightforward, no lender delays. A creative offer (subject-to, seller financing) may let us pay you a higher total price by taking over your existing mortgage or spreading payments. We'll walk you through both options and let you choose what fits best.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
 <section class="final-cta">
   <div class="container">
     <h2>Ready to sell your Atlanta house?</h2>
@@ -323,7 +368,7 @@
     <div class="footer-grid">
       <div class="footer-brand"><a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 100 100" style="width:40px;height:40px;"><circle cx="50" cy="50" r="48" fill="#FFF" stroke="#0A0A0A" stroke-width="2"/><path d="M28 56 L50 36 L72 56 L72 74 L58 74 L58 63 L42 63 L42 74 L28 74 Z" fill="#E30613"/></svg><div class="logo-text">Cash House<br/>Buyers <span>4 You</span></div></a><p>Fair options for homeowners across Atlanta, Tulsa, Tampa Bay, and Seattle. BBB A+ Accredited.</p></div>
       <div class="footer-col"><h4>For Sellers</h4><ul><li><a href="how-it-works.html">How It Works</a></li><li><a href="options-to-sell.html">Options to Sell</a></li><li><a href="index.html#offer">Get Your Offer</a></li><li><a href="seniors.html">For Seniors &amp; Families</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div class="footer-col"><h4>Where We Buy</h4><ul><li><a href="atlanta.html">Atlanta, GA</a></li><li><a href="tulsa.html">Tulsa, OK</a></li><li><a href="florida.html">Hernando &amp; Pasco, FL</a></li><li><a href="seattle.html">Seattle, WA</a></li></ul></div>
+      <div class="footer-col"><h4>Where We Buy</h4><ul><li><a href="atlanta.html">Atlanta, GA</a></li><li><a href="tulsa.html">Tulsa, OK</a></li><li><a href="hernando-county.html">Hernando County, FL</a></li><li><a href="pasco-county.html">Pasco County, FL</a></li></ul></div>
       <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li><li><a href="for-investors.html">For Investors</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Service</a></li></ul></div>
     </div>
     <div class="footer-bottom">© 2026 Cash House Buyers 4 You · All rights reserved</div>
