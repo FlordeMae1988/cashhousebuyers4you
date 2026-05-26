@@ -1,4 +1,36 @@
-/atlanta    /atlanta.html    200
-/tulsa      /tulsa.html      200
-/florida    /florida.html    200
-/seattle    /seattle.html    200
+# Clean-URL rewrites (200 = address bar stays the same, .html file served behind the scenes)
+/atlanta      /atlanta.html     200
+/tulsa        /tulsa.html       200
+/florida      /florida.html     200
+/seattle      /seattle.html     200
+
+# --- Legacy URL redirects (added May 2026) ---
+# 301 = permanent redirect, address bar updates to the new URL
+
+# Old WordPress pages -> new equivalents
+/avoiding-foreclosure          /options-to-sell   301
+/avoiding-foreclosure/         /options-to-sell   301
+/get-a-cash-offer-today        /#offer            301
+/get-a-cash-offer-today/       /#offer            301
+/compare                       /options-to-sell   301
+/compare/                      /options-to-sell   301
+/contact-us                    /contact           301
+/contact-us/                   /contact           301
+/our-company                   /about             301
+/our-company/                  /about             301
+/privacy-policy                /privacy           301
+/privacy-policy/               /privacy           301
+
+# Old Pretty Links / WordPress "/go/" redirects
+/go/stop-foreclosure              /options-to-sell   301
+/go/stop-foreclosure/             /options-to-sell   301
+/go/selling-to-a-professional     /how-it-works      301
+/go/selling-to-a-professional/    /how-it-works      301
+
+# WordPress junk paths (410 = "Gone" - tells Google to drop these from the index)
+/wp-admin/*                    /                  410
+/wp-content/*                  /                  410
+/wp-includes/*                 /                  410
+/wp-json/*                     /                  410
+/xmlrpc.php                    /                  410
+/wp-login.php                  /                  410
