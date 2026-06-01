@@ -1,8 +1,9 @@
 # Clean-URL rewrites (200 = address bar stays the same, .html file served behind the scenes)
-/atlanta      /atlanta.html     200
-/tulsa        /tulsa.html       200
-/florida      /florida.html     200
-/seattle      /seattle.html     200
+/atlanta        /atlanta.html         200
+/tulsa          /tulsa.html           200
+/oklahoma-city  /oklahoma-city.html   200
+/florida        /florida.html         200
+/seattle        /seattle.html         200
 
 # --- Legacy URL redirects (added May 2026) ---
 # 301 = permanent redirect, address bar updates to the new URL
