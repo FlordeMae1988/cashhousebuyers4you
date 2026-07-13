@@ -1,0 +1,5 @@
+# Task briefs / internal docs — not part of the site
+*.docx
+
+# macOS
+.DS_Store

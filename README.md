@@ -74,14 +74,12 @@ Hidden fields were added to support clean Zapier branching:
 - Careers: `route_to=hr-inbox`
 - Contact routing strategy: `routing_strategy=route-by-reason-dropdown`
 
-## 4) GA4 + Event Tracking
+## 4) Tracking via Google Tag Manager
 
-- Google tag snippet with Measurement ID `G-8GYNDHV0C5` is included in all HTML pages.
-- `analytics.js` tracks conversion events:
-  - `generate_lead` (form submissions)
-  - `phone_click` (all `tel:` links)
-  - `tool_completion` (custom hook/event)
-- `analytics.js` was adjusted to avoid overriding an already initialized `gtag` instance.
+- GTM container `GTM-MPPZSR8V` is included in all HTML pages: the container script in `<head>`, and a `<noscript>` iframe fallback immediately after `<body>`.
+- The legacy gtag snippet was removed — its GA4 property sat in an account the business no longer controls.
+- GA4 configuration and event tags (`form_submit`, `phone_click`, `cta_click`) are now managed from the GTM dashboard, so tracking changes no longer require code edits.
+- `analytics.js` remains in the repo but no longer loads GA4; GTM handles it.
 
 ## 5) Asset Fixes
 

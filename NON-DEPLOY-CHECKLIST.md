@@ -33,11 +33,8 @@ Suggested actions per branch:
 
 Implemented:
 
-- GTAG snippet (`G-8GYNDHV0C5`) added in all HTML pages.
-- Conversion events in `analytics.js`:
-  - `generate_lead` (form submissions)
-  - `phone_click` (tel links)
-  - `tool_completion` (custom events)
+- Google Tag Manager container (`GTM-MPPZSR8V`) added in all HTML pages: head script plus `<noscript>` body fallback.
+- The legacy gtag snippet was removed; GA4 and event tags are now configured inside the GTM dashboard rather than in code.
 
 Still required manually:
 
